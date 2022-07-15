@@ -25,6 +25,8 @@ import com.example.cleanarchitecturekotlin.core.extension.close
 import com.example.cleanarchitecturekotlin.core.extension.failure
 import com.example.cleanarchitecturekotlin.core.extension.observe
 import com.example.cleanarchitecturekotlin.core.platform.BaseFragment
+import com.example.cleanarchitecturekotlin.databinding.FragmentMovieDetailsBinding
+import com.example.cleanarchitecturekotlin.databinding.FragmentMoviesBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -43,6 +45,7 @@ class MovieDetailsFragment : BaseFragment() {
     lateinit var movieDetailsAnimator: MovieDetailsAnimator
 
     private val movieDetailsViewModel by viewModels<MovieDetailsViewModel>()
+    private var binding: FragmentMovieDetailsBinding? = null
 
     override fun layoutId() = R.layout.fragment_movie_details
 

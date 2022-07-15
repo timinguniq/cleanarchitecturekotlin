@@ -26,6 +26,7 @@ import com.example.cleanarchitecturekotlin.core.extension.failure
 import com.example.cleanarchitecturekotlin.core.extension.observe
 import com.example.cleanarchitecturekotlin.core.navigation.Navigator
 import com.example.cleanarchitecturekotlin.core.platform.BaseFragment
+import com.example.cleanarchitecturekotlin.databinding.FragmentMoviesBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -38,6 +39,7 @@ class MoviesFragment : BaseFragment() {
     lateinit var moviesAdapter: MoviesAdapter
 
     private val moviesViewModel: MoviesViewModel by viewModels()
+
 
     override fun layoutId() = R.layout.fragment_movies
 
