@@ -1,7 +1,7 @@
 package com.example.cleanarchitecturekotlin.core.di
 
 import com.example.cleanarchitecturekotlin.BuildConfig
-import com.example.cleanarchitecturekotlin.features.movies.MoviesRepository
+import com.example.cleanarchitecturekotlin.features.photos.PhotosRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,7 +20,7 @@ class ApplicationModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://raw.githubusercontent.com/android10/Sample-Data/master/Android-CleanArchitecture-Kotlin/")
+            .baseUrl("https://picsum.photos//")
             .client(createClient())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
@@ -38,5 +38,5 @@ class ApplicationModule {
 
     @Provides
     @Singleton
-    fun provideMoviesRepository(dataSource: MoviesRepository.Network): MoviesRepository = dataSource
+    fun providePhotosRepository(dataSource: PhotosRepository.Network): PhotosRepository = dataSource
 }

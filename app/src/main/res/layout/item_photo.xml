@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/photoPoster"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/image_not_found"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/photo_like_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/image_not_found"
+        android:src="@drawable/unselected_like"
+        android:layout_below="@+id/photoPoster"
+        android:layout_toStartOf="@+id/photo_dislike_img"/>
+
+    <ImageView
+        android:id="@+id/photo_dislike_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/image_not_found"
+        android:src="@drawable/unselected_dislike"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/photoPoster"/>
+
+
+</RelativeLayout>
+

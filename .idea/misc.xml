@@ -5,13 +5,20 @@
       <map>
         <entry key="app/src/main/res/layout/activity_layout.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16510416666666666" />
+        <entry key="app/src/main/res/layout/activity_photos.xml" value="0.3255208333333333" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/layout/fragment_movie_details.xml" value="0.16510416666666666" />
+        <entry key="app/src/main/res/layout/fragment_movies.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_photo_detail.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/fragment_photos.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/item_photo.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/row_movie.xml" value="0.1" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.16510416666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

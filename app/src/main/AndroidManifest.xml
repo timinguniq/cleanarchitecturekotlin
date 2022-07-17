@@ -2,12 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.cleanarchitecturekotlin">
-
     <!-- Permission -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".AndroidApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,8 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cleanarchitecturekotlin"
         tools:targetApi="31">
+
         <activity
             android:name=".core.navigation.RouteActivity"
+            android:noHistory="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,23 +28,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".features.login.LoginActivity"
-            android:label="@string/login_screen_title">
-        </activity>
-
+            android:label="@string/login_screen_title"></activity>
         <activity
             android:name=".features.movies.MoviesActivity"
-            android:label="@string/movies_screen_title">
-        </activity>
-
+            android:label="@string/movies_screen_title"></activity>
         <activity
             android:name=".features.movies.MovieDetailsActivity"
             android:label="@string/movie_details_screen_title"
-            android:theme="@style/AppTheme.Translucent">
-        </activity>
+            android:theme="@style/AppTheme.Translucent"></activity>
 
+        <activity
+            android:name=".features.photos.PhotosActivity" />
+
+        <activity
+            android:name=".features.photodetail.PhotoDetailActivity" />
 
     </application>
 
