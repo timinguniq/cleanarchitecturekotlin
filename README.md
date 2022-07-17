@@ -5,8 +5,8 @@
 ### Kotlin version : v1.6.21<br/>
 
 ## 아키텍처
-### [참고 ](https://github.com/android10/Android-CleanArchitecture-Kotlin "go link")
-### 여기 사이트 참고 하여 작성하였습니다.<br/>
+### [참고 깃허브](https://github.com/android10/Android-CleanArchitecture-Kotlin "go link")
+### 여기 깃허브 사이트를 참고 하여 작성하였습니다.<br/>
 
 ## 어플 간략 설명
 ### 예시로 주신 api에서 list과 info를 사용하여 작성하였고
